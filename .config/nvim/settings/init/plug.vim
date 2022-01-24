@@ -33,6 +33,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'airblade/vim-gitgutter'
   Plug 'lambdalisue/gina.vim'
 
+  Plug 'honza/vim-snippets'
+  Plug 'sheerun/vim-polyglot'
 
   Plug '/Users/yuucu/workspace/vim/vimq'
   Plug '/Users/yuucu/workspace/vim/vgdiff'
