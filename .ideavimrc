@@ -1,0 +1,5 @@
+source ~/.config/nvim/init.vim
+
+nnoremap gi :<C-u>action GotoImplementation<CR>
+nnoremap <C-o> :<C-u>action Back<CR>
+nnoremap <C-i> :<C-u>action Forward<CR>
