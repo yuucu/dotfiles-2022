@@ -1,6 +1,6 @@
 window:
   decorations: none
-  startup_mode: windowed
+  startup_mode: Windowed
 background_opacity: 0.80
 live_config_reload: true
 colors:
