@@ -10,7 +10,6 @@ let g:coc_global_extensions = [
       \'coc-git', 
       \'coc-highlight',
       \'coc-markdownlint', 
-      \'coc-spell-checker', 
       \'coc-html', 
       \'coc-css', 
       \'coc-eslint', 
