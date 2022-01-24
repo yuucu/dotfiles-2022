@@ -16,8 +16,10 @@ let g:coc_global_extensions = [
       \'coc-prettier', 
       \'coc-tslint-plugin', 
       \'coc-tsserver', 
+      \'coc-vimlsp',
       \'coc-snippets', 
       \'coc-json', 
+      \'coc-swagger',
       \'coc-toml', 
       \'coc-yaml'
 \]
@@ -179,3 +181,5 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
+
+let g:coc_fzf_preview_fullscreen = 1
