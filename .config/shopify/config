@@ -1,0 +1,8 @@
+[versioncheck]
+last_checked_at = 1648355845
+
+[analytics]
+enabled = true
+
+[features]
+shopifolk = false

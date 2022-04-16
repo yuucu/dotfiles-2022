@@ -1,8 +1,7 @@
 {
   "suggest.noselect": false,
   "suggest.preferCompleteThanJumpPlaceholder": true,
-  "languageserver": {
-    "terraform": {
+  "languageserver": { "terraform": {
       "command": "terraform-ls",
       "args": ["serve"],
       "filetypes": [
@@ -27,6 +26,12 @@
       "rootPatterns": [
         ".theme-check.yml"
       ]
+    },
+    "haskell": {
+      "command": "haskell-language-server-wrapper",
+      "args": ["--lsp"],
+      "rootPatterns": ["*.cabal", "stack.yaml", "cabal.project", "package.yaml", "hie.yaml"],
+      "filetypes": ["haskell", "lhaskell"]
     }
   },
   "go.goplsOptions": {

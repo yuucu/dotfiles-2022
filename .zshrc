@@ -36,7 +36,7 @@ export GOENV_ROOT=$HOME/.goenv
 export PATH=$GOENV_ROOT/bin:$PATH
 
 export GOPATH=$HOME/go
-PATH=$PATH:$GOPATH/bin
+PATH=$PATH:$GOPATH/1.16.6/bin
 export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
 
 function cd_ghq_list() {
@@ -61,3 +61,7 @@ zinit light sindresorhus/pure
 zinit light paulirish/git-open
 
 PROMPT='%F{white}%* '$PROMPT
+
+[ -f "/Users/yuucu/.ghcup/env" ] && source "/Users/yuucu/.ghcup/env" # ghcup-env
+
+export AWS_PROFILE=kandpro
