@@ -27,6 +27,15 @@
       "rootPatterns": [
         ".theme-check.yml"
       ]
+    },
+    "csharp-ls": {
+      "command": "csharp-ls",
+      "filetypes": ["cs"],
+      "rootPatterns": ["*.csproj", ".vim/", ".git/", ".hg/"]
+    },
+    "kotlin": {
+        "command": "kotlin-language-server",
+        "filetypes": ["kotlin"]
     }
   },
   "go.goplsOptions": {

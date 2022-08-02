@@ -1,5 +1,14 @@
 source ~/.config/nvim/init.vim
 
 nnoremap gi :<C-u>action GotoImplementation<CR>
+
 nnoremap <C-o> :<C-u>action Back<CR>
 nnoremap <C-i> :<C-u>action Forward<CR>
+
+" Map <leader>d to start debug
+map <leader>d <Action>(Debug)
+
+nnoremap <leader>f :action SearchEverywhere<CR>
+nnoremap <leader>r :action FindInPath<CR>
+nnoremap <leader>a :action GotoAction<CR>
+vnoremap <leader>a :action GotoAction<CR>

@@ -8,6 +8,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'antoinemadec/coc-fzf'
   Plug 'mattn/vim-goimports'                                                
   Plug 'tyru/open-browser.vim'                                              
+  Plug 'mechatroner/rainbow_csv'
+
   " fern
   Plug 'lambdalisue/fern.vim'
   Plug 'lambdalisue/fern-git-status.vim'
@@ -21,7 +23,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'maxmellon/vim-jsx-pretty'
 
   " UML
-  Plug 'skanehira/preview-uml.vim'
+  Plug 'weirongxu/plantuml-previewer.vim'
   Plug 'aklt/plantuml-syntax'
 
   Plug 'kannokanno/previm'
@@ -31,11 +33,18 @@ call plug#begin('~/.vim/plugged')
 
   " git
   Plug 'airblade/vim-gitgutter'
-  Plug 'lambdalisue/gina.vim'
+  Plug 'tpope/vim-fugitive'
+  Plug 'tpope/vim-rhubarb'
 
+  Plug 'hashivim/vim-terraform'
 
-  Plug '/Users/yuucu/workspace/vim/vimq'
-  Plug '/Users/yuucu/workspace/vim/vgdiff'
-  Plug 'yuucu/vimo.vim'
+  Plug '/Users/s09104/ghq/github.com/yuucu/vimq.vim'
+
+  Plug 'MTDL9/vim-log-highlighting'
+  Plug 'tyru/open-browser-github.vim'
+  Plug 'simeji/winresizer'
+  Plug 'kdheepak/lazygit.nvim'
+
+  Plug 'udalov/kotlin-vim'
 
 call plug#end()

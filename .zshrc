@@ -22,7 +22,7 @@ zinit light-mode for \
 
 export PATH="$HOME/.anyenv/bin:$PATH"
 
-if [ -x /opt/homebrew/bin/anyenv ]
+if [ -x /usr/local/bin/anyenv ]
 then
   if ! [ -f /tmp/anyenv.cache ]
   then
@@ -32,12 +32,13 @@ then
   source /tmp/anyenv.cache
 fi
 
-export GOENV_ROOT=$HOME/.goenv
-export PATH=$GOENV_ROOT/bin:$PATH
+# export GOENV_ROOT=$HOME/.goenv
+# export PATH=$GOENV_ROOT/bin:$PATH
 
 export GOPATH=$HOME/go
 PATH=$PATH:$GOPATH/bin
 export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
+export PATH="$PATH:/Users/s09104/.dotnet/tools"
 
 function cd_ghq_list() {
   local destination_dir="$(ghq list --full-path| fzf)"
@@ -61,3 +62,8 @@ zinit light sindresorhus/pure
 zinit light paulirish/git-open
 
 PROMPT='%F{white}%* '$PROMPT
+
+
+alias jenkins="aws ssm start-session --target i-0b81bcebccc2239b6"
+alias dev_master="mysql -h dark-dev-master-data-01.cluster-chfbskpzqopc.ap-northeast-1.rds.amazonaws.com -udark_ddluser -pGee0Po1I"
+alias snowsql=/Users/s09104/Applications/SnowSQL.app/Contents/MacOS/snowsql

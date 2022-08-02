@@ -50,3 +50,9 @@ au Colorscheme * hi SpellBad ctermfg=23 cterm=none ctermbg=none
 
 runtime! settings/init/*.vim
 runtime! settings/plugconfig/*.vim
+
+" kotlin対応
+autocmd BufReadPost *.kt setlocal filetype=kotlin
+
+
+let g:git_commit_prefix_lang = 'ja'
